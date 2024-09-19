@@ -198,6 +198,3 @@ function! s:RunRg(cmd)
 endfunction
 
 command! -nargs=? -complete=file Rg call s:RunRg(<q-args>)
-map <leader>rg :Rg<CR>
-" Use Rg to search for word under cursor
-map <leader>rw :Rg <cword><CR>
